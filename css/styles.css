@@ -1,0 +1,142 @@
+/*------------- CSS RESET -----------------------*/
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: ;
+}
+
+body{
+  /*width: 75%;
+  max-width: 700px;*/
+  font-family: 'Helvetica Light','Open Sans','Arial', sans-serif;
+  /*font-family: 'Libre Baskerville', Georgia, Times, 'Times New Roman',serif;*/
+  margin: auto;
+  background-color: #ffffff;*/
+  /*background-color: #fafafa;*/
+  color: #333;
+  line-height: 1.8;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: visible;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src:url('../fonts/HelveticaNeueLTStd-Bd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Helvetica Regular';
+  src:url('../fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Helvetica Thin';
+  src:url('../fonts/HelveticaNeueLTStd-Th.otf') format('opentype');
+}
+
+
+/*---------------------------------------------------*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 5vw 7vw 5vw 50vw 25vw;
+  grid-template-rows: 15vh 55vh 20vh 10vh;
+  background-color: #fff;
+  color: #444;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.box {
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+  overflow: visible;
+  /*border: 1px black solid;*/
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.a {
+  background-color: #029d9a;
+  background-image:linear-gradient(45deg, rgba(94,0,134,0.7) 0%, rgba(246,33,238,0.5) 100%), url(../images/2.jpg);
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: -4;
+}
+
+.b {
+  background-color: #fff;
+  grid-row-start: 2;
+  grid-row-end: -2;
+  grid-column-start: 2;
+  grid-column-end: -3;
+  z-index: 1;
+  box-shadow: 0px 21px 28px -6px rgba(0,0,0,0.22);
+  /*border: .2em white solid;*/
+  overflow-x: visible;
+  overflow-y: visible;
+  overflow: visible;
+}
+
+h2 {
+  color: #54075b;
+  font-size: 2em;
+  overflow: visible;
+  text-align: left;
+  margin-top: ;
+  font-family: 'Helvetica';
+  text-transform: lowercase;
+  line-height: .9em;
+}
+
+p {
+  font-family: 'Helvetica Regular';
+  color: #54075b;
+  overflow: visible;
+  text-align: left;
+  margin-top: .2em;
+  font-size: 1.2em;
+  line-height: 24px;
+}
+
+ul {
+  font-family: 'Helvetica Thin';
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #444;
+  overflow: visible;
+  margin-top: 1.5em;
+  width: 5vw;
+}
+
+li {
+  overflow: visible;
+  list-style: none;
+  margin-top: .5em;
+  text-transform: lowercase;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  overflow: visible;
+  width: auto;
+}
+
+a:hover {
+  opacity: .6;
+  transition:  opacity 0.2s ease;
+  display: block;
+  color: #54075b;
+}
